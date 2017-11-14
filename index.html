@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name= "author" content = "Emil Mombay">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emil Mombay Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animatescroll.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+  <div class="navbar" id= "nav">
+    <a href="#" onclick= "$('#Home').animatescroll();"> Home</a>
+    <a href= "#" onclick="$('#About').animatescroll();"> About me</a>
+    <a href="#" onclick="$('#Projects').animatescroll();">Projects</a>
+    <a href="#" onclick= "$('#Inspirations').animatescroll();">Inspirations</a>
+    <a href="#" onclick="$('#Contact').animatescroll();">Contact</a>
+  </div>
+
+  <div class="pimg4" id="Home">
+    <div class="ptext">
+      <span class="border">
+        Emil Mombay
+      </span>
+      <div class="under-text">
+        Software Engineer | Web Developer | UI/UX Designer
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-light" id= "About">
+    <h2>About Me</h2>
+    <div class="about-text">
+    <p>
+      I live in Carson, California. I am a Software Engineering Major from
+      <a href="https://uci.edu/" target="_blank">UCI</a>.
+    </p>
+    <p>
+      I write <a href="https://github.com/mellopillow" target="_blank">code</a>.
+      I believe in great user experience and test driven development.
+
+    </p>
+    <p>
+      I dabble in art and digital media.
+    </p>
+    <p>
+      I play <a href="http://steamcommunity.com/id/mellopillow" target="_blank">video games</a> and have quite a collection of console games.
+    </p>
+    <p>
+      I compete in fighting games <a href="https://smash.gg/" target="_blank">competitively</a>.
+    </p>
+    <p>
+      Currently interning at <a href="http://www.pm2net.com/" target="_blank">Pm2net</a>.
+    </p>
+    <p>
+      Looking for <a href="https://www.linkedin.com/in/emilmombay/" target="_blank">opportunities</a> in the web development space and software engineering
+    </div>
+  </section>
+
+  <div class="pimg3" id= "Projects">
+    <div class="ptext">
+      <span class="border">
+        Projects
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2><u>Experience</u></h2>
+    <p>
+      <strong>
+      Jayne.io | Web Development intern
+    </strong>
+    </p>
+
+      <b>
+      <li>Currently developing a dashboard for an IoT application that analyzes and measures helpful metrics for cultivating plants.</li>
+      <li>Uses the thingworx platform to obtain data from sensors in greenhouses and create descriptive graphics with those data.</li>
+      <li>Technologies Used: ThingWorx, HTML5/CSS, JavaScript, PHP, Bootstrap</li>
+      </b>
+
+
+    <p>
+      <strong>
+      Lazarus | Team Lead, Programmer, Art Director
+    </strong>
+    </p>
+
+      <b>
+      <li>Developing a 2D metroidvania-styled sidescroller as a Class project in a team of 6 with the Unity 3D GameEngine.</li>
+      <li>Tasked with leading the team, organizing and prioritizing tasks with project management tools to develop the features of the game.</li>
+      <li>Technologies Used: Unity 3D, C#, Trello, Microsoft Excel.</li>
+    </b>
+
+  </section>
+
+
+  <div class="pimg2" id= "Inspirations">
+    <div class="ptext">
+      <span class="border">
+        <u>Inspirations</u>
+      </span>
+
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="slider-outer">
+        <img src="img/arrow-left.png" class = "prev" alt ="Prev">
+        <div class="slider-inner">
+          <img src="img/casino.png" class = "active">
+          <img src="img/ux_idea.jpg">
+          <img src="img/deadcells2.jpg">
+          <img src="img/Map_Artwork.jpg">
+        </div>
+        <img src="img/arrow-right.png" class = "next" alt ="Next">
+      </div>
+    </div>
+    <p>
+      I try to find various images and get inspired by them whenever I make a design.
+      These are some of the images that inspired projects I am currently working on.
+    </p>
+    <p>
+      I make game levels, apply art direction, develop UI designs, and create sprite assets with these.
+    </p>
+  </section>
+
+
+
+  <div class="pimg1" id= "Contact">
+    <div class="ptext">
+      <span class="border">
+        Contact Me
+      </span>
+    </div>
+    <div class="ptext2">
+      <span class="border">
+        emombay@uci.edu
+      </span>
+    </div>
+  </div>
+
+<script>
+    document.getElementById('nav').addEventListener("click", animatescroll);
+</script>
+</body>
+
+
+</html>

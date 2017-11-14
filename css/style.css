@@ -1,0 +1,354 @@
+/* animatescroll plugin found here: https://plugins.compzets.com/animatescroll/ by Ram Swaroop*/
+/* Style and fixed scroll background from Traversy Media Youtube Channel*/
+
+
+body, html{
+  height:100%;
+  margin: 0;
+  margin-top: 28px;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+a{
+  color:#ffa500;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+strong{
+  font-size: 18px;
+}
+
+li{
+  text-align: left;
+}
+
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* the section images */
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/profile2.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/city.jpg');
+  min-height:400px;
+}
+
+.pimg4{
+  background-image:url('../img/image4.jpg');
+  min-height:400px;
+}
+
+.container{
+  width:540px;
+  margin:auto;
+  overflow: auto;
+
+}
+
+.about-text{
+  text-align: center;
+
+}
+
+.slider-inner{
+  width:500px;
+  height: 300px;
+  position:relative;
+  overflow: hidden;
+  float:left;
+  padding:3px;
+  border:#666 solid 1px;
+}
+
+.slider-inner img{
+  display: none;
+  width:500px;
+  height:300px;
+
+}
+
+.slider-inner img.active{
+  display:inline-block;
+}
+
+.prev,.next{
+  float:left;
+  margin-top:130px;
+  cursor: pointer;
+}
+
+.prev{
+  position:relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next{
+  position:relative;
+  margin-left:-45px;
+  z-index: 100;
+}
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#113;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext2{
+  position:absolute;
+  top:65%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext2 .border{
+  background-color:#113;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+.under-text{
+  position:relative;
+  padding-top: 50px;
+  top: 50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size: 18px;
+  letter-spacing:2px;
+}
+
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+
+  .container{
+    display: block;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .prev{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+  }
+
+  .next{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+  }
+
+  .slider-inner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: none;
+  }
+
+  .slider-inner img{
+    width: 100%;
+    height: initial;
+
+  }
+
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:16px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+  }
+
+  .ptext .border{
+    background-color:#113;
+    color:#fff;
+    padding:20px;
+  }
+
+  .ptext2{
+    position:absolute;
+    top:65%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:16px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+  }
+
+  .ptext2 .border{
+    background-color:#113;
+    color:#fff;
+    padding:20px;
+  }
+
+  @media(max-width:1112px){
+    .pimg1, .pimg2, .pimg3, .pimg4{
+      background-attachment:scroll;
+    }
+
+    .container{
+      display: block;
+      margin: auto;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .prev{
+      position: absolute;
+      z-index: 100;
+      left: 0;
+    }
+
+    .next{
+      position: absolute;
+      z-index: 100;
+      right: 0;
+    }
+
+    .slider-inner{
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      float: left;
+      padding: 3px;
+      border: none;
+    }
+
+    .slider-inner img{
+      width: 100%;
+      height: initial;
+
+    }
+
+    .ptext{
+      position:absolute;
+      top:50%;
+      width:100%;
+      text-align:center;
+      color:#000;
+      font-size:20px;
+      letter-spacing:7px;
+      text-transform:uppercase;
+    }
+
+    .ptext .border{
+      background-color:#113;
+      color:#fff;
+      padding:20px;
+    }
+
+    .ptext2{
+      position:absolute;
+      top:65%;
+      width:100%;
+      text-align:center;
+      color:#000;
+      font-size:20px;
+      letter-spacing:7px;
+      text-transform:uppercase;
+    }
+
+    .ptext2 .border{
+      background-color:#113;
+      color:#fff;
+      padding:20px;
+    }
+
+}
