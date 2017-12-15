@@ -13,6 +13,18 @@ body, html{
   color:#666;
 }
 
+.Research img{
+
+
+  width: 50%;
+  height: 50%;
+}
+
+.Research a{
+  width: 50%;
+  height: 50%;
+}
+
 a{
   color:#ffa500;
   text-decoration: none;
